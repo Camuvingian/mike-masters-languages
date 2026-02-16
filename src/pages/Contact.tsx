@@ -17,10 +17,10 @@ interface FormErrors {
   message?: string;
 }
 
-// EmailJS configuration — replace these with your actual IDs
-const EMAILJS_SERVICE_ID = 'service_XXXXXXX';
-const EMAILJS_TEMPLATE_ID = 'template_XXXXXXX';
-const EMAILJS_PUBLIC_KEY = 'XXXXXXXXXXXXXXX';
+// EmailJS configuration — loaded from environment variables
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export default function Contact() {
   useScrollAnimation();

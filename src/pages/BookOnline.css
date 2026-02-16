@@ -50,15 +50,15 @@
 .duration-badge {
   padding: 0.25rem 0.65rem;
   border-radius: 0.5rem;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--card-text);
   font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .booking-desc {
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -79,20 +79,23 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text);
+  background: linear-gradient(135deg, #FFEE92, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .booking-price-detail {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--card-text-muted);
 }
 
 .booking-saving {
   display: inline-block;
   padding: 0.2rem 0.75rem;
   border-radius: 2rem;
-  background: rgba(51, 171, 153, 0.12);
-  color: var(--secondary);
+  background: rgba(255, 238, 146, 0.2);
+  color: #FFEE92;
   font-size: 0.8rem;
   font-weight: 600;
   margin-top: 0.25rem;
@@ -111,7 +114,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: var(--text);
+  color: var(--card-text);
 }
 
 .features-list svg {

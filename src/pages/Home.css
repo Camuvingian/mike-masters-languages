@@ -86,22 +86,23 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.75rem;
   font-weight: 700;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--card-text);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
 }
 
 .stat-label {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   text-align: center;
 }
 
 .stat-divider {
   width: 1px;
   height: 40px;
-  background: var(--border);
+  background: var(--card-text-muted);
 }
 
 /* ========================================
@@ -137,10 +138,11 @@
 .lang-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  color: var(--card-text);
 }
 
 .lang-card p {
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -268,8 +270,8 @@
   width: 56px;
   height: 56px;
   border-radius: 0.75rem;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--card-text);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -281,10 +283,11 @@
   margin-bottom: 0.65rem;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
+  color: var(--card-text);
 }
 
 .service-card p {
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -293,7 +296,10 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--primary);
+  background: linear-gradient(135deg, #FFEE92, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-top: 0.75rem;
 }
 
@@ -301,15 +307,16 @@
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--text-muted);
+  background: none;
+  -webkit-text-fill-color: var(--card-text-muted);
 }
 
 .service-saving {
   display: inline-block;
   padding: 0.15rem 0.6rem;
   border-radius: 2rem;
-  background: rgba(51, 171, 153, 0.12);
-  color: var(--secondary);
+  background: rgba(255, 238, 146, 0.2);
+  color: #FFEE92;
   font-size: 0.75rem;
   font-weight: 600;
   margin-top: 0.35rem;
@@ -320,9 +327,17 @@
    ======================================== */
 
 .testimonials-section {
-  background: var(--surface);
+  background: var(--card-bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+.testimonials-section .section-title {
+  color: var(--card-text);
+}
+
+.testimonials-section .section-subtitle {
+  color: var(--card-text-muted);
 }
 
 .carousel {
@@ -370,7 +385,7 @@
 .testimonial-card blockquote {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--text);
+  color: var(--card-text);
   font-style: italic;
   margin-bottom: 1.5rem;
 }
@@ -398,11 +413,12 @@
 .testimonial-author strong {
   display: block;
   font-size: 0.95rem;
+  color: var(--card-text);
 }
 
 .testimonial-author span {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--card-text-muted);
 }
 
 .carousel-btn {
@@ -412,9 +428,9 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--card-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,9 +440,9 @@
 }
 
 .carousel-btn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  box-shadow: 0 2px 8px var(--shadow);
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 .carousel-prev { left: -0.5rem; }
@@ -444,14 +460,14 @@
   height: 8px;
   border-radius: 50%;
   border: none;
-  background: var(--border);
+  background: rgba(255, 255, 255, 0.35);
   cursor: pointer;
   transition: all 0.2s ease;
   padding: 0;
 }
 
 .carousel-dot.active {
-  background: var(--primary);
+  background: #fff;
   transform: scale(1.3);
 }
 

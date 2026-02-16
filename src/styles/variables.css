@@ -15,7 +15,9 @@
   --background: #F6F7FB;
   --surface: #FFFFFF;
   --surface-hover: #f0f2f6;
-  --card-bg: #FFF8D6;
+  --card-bg: linear-gradient(135deg, #047ea5 0%, #035E7B 100%);
+  --card-text: #fff;
+  --card-text-muted: rgba(255, 255, 255, 0.75);
   --text: #003C4D;
   --text-muted: #527a87;
   --border: #dce4e8;
@@ -43,6 +45,8 @@
   --surface: #00485c;
   --surface-hover: #005269;
   --card-bg: #00485c;
+  --card-text: var(--text);
+  --card-text-muted: var(--text-muted);
   --text: #F0F6F8;
   --text-muted: #8fb8c4;
   --border: #0a6178;
@@ -187,6 +191,7 @@ ul, ol {
 
 .btn-primary:hover {
   background: var(--primary-hover);
+  color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px var(--shadow-lg);
 }
@@ -225,10 +230,38 @@ ul, ol {
 
 .card {
   background: var(--card-bg);
+  color: var(--card-text);
   border: 1px solid var(--border);
   border-radius: 1rem;
   padding: 2rem;
   transition: all 0.3s ease;
+}
+
+.card h3 {
+  color: var(--card-text);
+}
+
+.card p,
+.card .compare-label,
+.card .price-detail {
+  color: var(--card-text-muted);
+}
+
+.card .compare-value,
+.card .price {
+  color: var(--card-text);
+}
+
+.card .btn-secondary,
+.lang-card .btn-secondary {
+  color: var(--card-text);
+  border-color: var(--card-text-muted);
+}
+
+.card .btn-secondary:hover,
+.lang-card .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--card-text);
 }
 
 .card:hover {

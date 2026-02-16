@@ -181,7 +181,7 @@ export default function Home() {
             <p>
               Finally, I am proud that I can say I have helped all of my GCSE and A-level students reach their target grades or better for the last three years since I started tutoring. As well as maintaining this 100% record, I aim to keep lessons as enjoyable for the students as possible and not only teach them to pass their exams, but hopefully to fall in love with the languages they study too!
             </p>
-            <Link to="/contact" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-secondary">
               Get in Touch
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </Link>

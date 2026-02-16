@@ -108,6 +108,10 @@
   color: #fff !important;
 }
 
+.footer-cta:hover {
+  color: #fff !important;
+}
+
 .footer-bottom {
   margin-top: 3rem;
   padding-top: 1.5rem;

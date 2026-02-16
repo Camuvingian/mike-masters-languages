@@ -128,8 +128,8 @@
   width: 56px;
   height: 56px;
   border-radius: 0.75rem;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--card-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,10 +141,11 @@
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.65rem;
+  color: var(--card-text);
 }
 
 .tuition-card > p {
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -161,20 +162,23 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text);
+  background: linear-gradient(135deg, #FFEE92, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .price-detail {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--card-text-muted);
 }
 
 .tuition-saving {
   display: inline-block;
   padding: 0.2rem 0.75rem;
   border-radius: 2rem;
-  background: rgba(51, 171, 153, 0.12);
-  color: var(--secondary);
+  background: rgba(255, 238, 146, 0.2);
+  color: #FFEE92;
   font-size: 0.8rem;
   font-weight: 600;
   margin-top: 0.25rem;
@@ -211,8 +215,8 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--card-text);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -224,10 +228,11 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: var(--card-text);
 }
 
 .benefit-card p {
-  color: var(--text-muted);
+  color: var(--card-text-muted);
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -236,7 +241,10 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--primary);
+  background: linear-gradient(135deg, #FFEE92, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-top: 0.75rem;
 }
 
